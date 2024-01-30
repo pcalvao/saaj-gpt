@@ -21,5 +21,5 @@ After all the libraries are installed you can run the system locally with the co
 python ./api/app.py
 ```
 
-If you wanna access the system on the web, click [here](http://pedrocalvao.pythonanywhere.com/). The drawback of using the system on the web is the fact that the version available is the first version of the system developed which has a not so friendly interface and the functionality of getting the local summaries of the results identified by ChatGPT is not working.
+If you wanna access the system online, click [here](http://pedrocalvao.pythonanywhere.com/). Some of the drawbacks of using the system online are the fact that the version available is the first version of the system developed which has a not so friendly interface and the functionality of getting the local summaries of the results identified by ChatGPT is not working. Other drawback of the online version is the fact that it only has available one document to be analyzed. 
 
