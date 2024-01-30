@@ -1,7 +1,7 @@
 # SAAJ-GPT
 
 ## Overview
-System for analyzing legal documents using ChatGPT and Natural Language Processing (NLP) with Natural Language Toolkit (NLTK). The system funcionalities are the following:
+System for analyzing legal documents using ChatGPT and Natural Language Processing (NLP) with Natural Language Toolkit (NLTK). The system is capable of analyzing documents both in English and Portuguese, although was developed with the analysis of documents in Portuguese in mind. The system funcionalities are the following:
 * Get a summary of the document being analyze
 * Get the results identified by ChatGPT for a category (People, Companies, Specific Topics and General Topics)
 * Get the local summaries of every result identified by ChatGPT
