@@ -1,0 +1,19 @@
+                                           Expression  Count
+0   [new, york, state, rifle, &, pistol, association]      8
+1                                               [inc]      0
+2                                              [west]     22
+3                  [national, rifle, assn, ., of, am]      0
+4                     [playboy, entertainment, group]      2
+5               [new, york, city, police, department]      3
+6   [centers, for, disease, control, and, prevention]      2
+7                            [gun, violence, archive]      3
+8                        [american, bar, association]      3
+9                                 [educational, fund]      5
+10                      [everytown, for, gun, safety]      2
+11                                [city, of, chicago]      2
+12                          [department, of, justice]      0
+13                  [bureau, of, justice, statistics]      2
+14                                              [cdc]      4
+15                         [jama, internal, medicine]      1
+16         [new, york, state, rifle, &, pistol, assn]      0
+17                                   [supreme, court]     27

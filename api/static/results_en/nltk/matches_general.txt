@@ -1,0 +1,50 @@
+                                                                                    Expression  Count
+0                                                                               [gun, control]      3
+1                                                                     [constitutional, rights]     12
+2                                                                     [supreme, court, ruling]      0
+3                                                                                [gun, rights]      2
+4                                                                                   [firearms]     98
+5                                                                             [public, safety]      4
+6                                                                           [legal, standards]      0
+7                                                                    [supreme, court, opinion]      0
+8                                                                        [constitutional, law]      0
+9                                                                             [supreme, court]     27
+10                                                            [constitutional, interpretation]      1
+11                                                                        [legal, conventions]      1
+12                                                                      [historical, evidence]     17
+13                                                                         [second, amendment]    177
+14                                                      [historical, regulation, of, firearms]      0
+15                                                                               [us, history]      0
+16                                                                             [firearm, laws]      2
+17                                                                                 [gun, laws]      1
+18                                                                          [state, analogues]      1
+19                                                              [american, firearm, tradition]      0
+20                                                                   [supreme, court, rulings]      0
+21                                                                       [american, tradition]      8
+22                                                                         [crime, prevention]      1
+23                                                                            [gun, ownership]      6
+24                                                                              [self-defense]     95
+25                                                                [gun, violence, in, the, us]      0
+26                                                             [firearms, and, their, dangers]      0
+27                                   [balancing, lawful, uses, of, guns, with, their, dangers]      0
+28                                   [responsibility, of, elected, bodies, to, regulate, guns]      0
+29  [differences, in, risks, and, benefits, posed, by, firearms, in, urban, and, rural, areas]      0
+30                                                                             [gun, violence]     27
+31                                                 [firearm-related, homicides, and, assaults]      1
+32                                                                  [urban, vs., rural, areas]      0
+33                                                 [state, vs., federal, firearm, regulations]      0
+34                                                                       [evidentiary, record]     11
+35                                                                 [state, licensing, regimes]      0
+36                                                                         [legal, frameworks]      0
+37                                [historical, interpretation, of, constitutional, provisions]      0
+38                                                                  [judicial, interpretation]      1
+39                                                                       [judicial, expertise]      0
+40                                                                 [gun, control, regulations]      0
+41                                                                     [legal, interpretation]      0
+42                                                                   [english, legal, history]      0
+43                                                                  [american, legal, history]      0
+44                                                                      [firearms, regulation]      3
+45                                                                      [firearm, regulations]      5
+46                                                                        [us, legal, history]      0
+47                                        [history, of, gun, control, in, the, united, states]      0
+48                                                                  [supreme, court, decision]      0

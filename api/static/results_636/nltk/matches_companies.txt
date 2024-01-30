@@ -1,0 +1,7 @@
+                              Expression  Count
+0             [tribunal, constitucional]      8
+1                  [ministério, público]      6
+2                           [a., ,, lda]      2
+3  [código, das, sociedades, comerciais]     23
+4                        [código, civil]     12
+5      [universidade, católica, editora]      1

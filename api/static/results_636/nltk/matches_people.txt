@@ -1,0 +1,16 @@
+                          Expression  Count
+0   [conselheiro, fernando, ventura]      1
+1                 [figueiredo, dias]      1
+2    [paulo, pinto, de, albuquerque]      2
+3                 [jorge, de, sousa]      1
+4            [manuel, simas, santos]      1
+5      [gonçalo, de, melo, bandeira]      1
+6                [marcello, caetano]      1
+7                 [gomes, canotilho]      1
+8                   [vital, moreira]      1
+9           [joão, castro, e, sousa]      1
+10          [fernando, vaz, ventura]      1
+11   [catarina, sarmento, e, castro]      1
+12                  [pedro, machete]      1
+13        [maria, clara, sottomayor]      1
+14      [manuel, da, costa, andrade]      1

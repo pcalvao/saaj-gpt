@@ -1,0 +1,19 @@
+                                    Expression  Count
+0                                    [direito]     15
+1                               [constituição]     28
+2                 [responsabilidade, criminal]     15
+3                        [direito, tributário]      0
+4                      [inconstitucionalidade]     15
+5                    [responsabilidade, civil]      0
+6                             [jurisprudência]     21
+7                             [direito, penal]      6
+8                     [legislação, tributária]      0
+9   [responsabilidade, criminal, de, empresas]      0
+10                        [direito, comercial]      1
+11                                [tributação]      0
+12                   [personalidade, jurídica]     27
+13                     [autonomia, societária]      1
+14                      [direito, empresarial]      0
+15                   [direito, constitucional]      0
+16                   [responsabilidade, penal]     14
+17                       [constitucionalidade]      2

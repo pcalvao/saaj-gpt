@@ -1,0 +1,29 @@
+                                                                          Expression  Count
+0                                                            [inconstitucionalidade]     15
+1                                                    [responsabilidade, subsidiária]     10
+2                                                                             [rgit]     42
+3                                                                           [multas]      7
+4                                                                           [coimas]      4
+5                                                             [entidades, coletivas]      0
+6                                                                       [associados]     22
+7   [responsabilidade, criminal, de, pessoas, coletivas, em, infrações, tributárias]      0
+8     [delimitação, do, círculo, de, sujeitos, visados, por, tal, responsabilização]      1
+9                                                [responsabilidade, dos, associados]      3
+10                                        [sociedades, sem, personalidade, jurídica]      0
+11                                                             [multas, tributárias]      0
+12                                                               [patrimônio, comum]      0
+13            [regimes, de, constituição, e, dissolução, de, sociedades, comerciais]      0
+14               [regime, de, dissolução, e, liquidação, de, sociedades, comerciais]      0
+15                                                   [responsabilidade, dos, sócios]      1
+16                                                        [interpretação, normativa]      6
+17                                                         [responsabilidade, penal]     14
+18                                         [entidades, sem, personalidade, jurídica]      2
+19                                                      [ilícito, penal, tributário]      1
+20                                                                           [multa]     27
+21                                      [sociedades, de, responsabilidade, limitada]      2
+22                                        [transmissão, da, responsabilidade, penal]      3
+23                             [responsabilidade, criminal, das, pessoas, coletivas]      1
+24                                         [princípio, da, pessoalidade, das, penas]      4
+25                     [responsabilidade, solidária, do, administrador, ou, gerente]      1
+26                                                                 [multa, criminal]      4
+27                                                    [encerramento, de, liquidação]      0

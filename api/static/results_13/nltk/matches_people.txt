@@ -1,0 +1,36 @@
+                                                  Expression  Count
+0                       [maria, alice, rodrigues, gonçalves]      1
+1                     [jorge, manuel, vaz, monteiro, duarte]      1
+2                                        [lourenço, martins]      9
+3                                        [henriques, gaspar]      4
+4                                            [pedro, caeiro]      8
+5                                          [vitalino, canas]      4
+6                                  [gonçalo, melo, bandeira]      1
+7                              [jorge, manuel, dias, duarte]      3
+8                                       [oliveira, ascensão]      3
+9                                [jorge, fernandes, godinho]      1
+10                                       [rodrigo, santiago]      4
+11                                        [eduardo, correia]      5
+12                                            [faria, costa]      1
+13                                      [fernandes, godinho]     12
+14                                        [figueiredo, dias]      6
+15                             [jorge, de, figueiredo, dias]      1
+16                    [jorge, alexandre, fernandes, godinho]      7
+17                             [juana, del, carpio, delgado]      1
+18                          [joão, manuel, de, sousa, fonte]      1
+19                [josé, adriano, machado, souto, de, moura]      1
+20           [josé, antónio, henriques, dos, santos, cabral]      1
+21             [antónio, jorge, fernandes, oliveira, mendes]      1
+22                             [josé, eduardo, reino, pires]      1
+23                    [antónio, pires, henriques, da, graça]      1
+24  [alfredo, rui, francisco, do, carmo, gonçalves, pereira]      1
+25                                   [luís, flores, ribeiro]      1
+26                        [josé, antónio, carmona, da, mota]      1
+27                               [antónio, pereira, madeira]      1
+28                   [manuel, josé, carrilho, simas, santos]      1
+29                        [josé, vaz, dos, santos, carvalho]      1
+30                   [antónio, joaquim, da, costa, mortágua]      1
+31                       [antónio, silva, henriques, gaspar]      1
+32                    [antónio, artur, rodrigues, da, costa]      1
+33                         [josé, vítor, soreto, de, barros]      1
+34                          [armindo, dos, santos, monteiro]      1

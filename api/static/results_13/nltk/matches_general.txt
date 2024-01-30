@@ -1,0 +1,14 @@
+                                  Expression  Count
+0                                  [direito]     19
+1                                  [justiça]     32
+2                           [direito, penal]      6
+3                [criminalidade, financeira]      0
+4                               [legislação]      1
+5                      [crimes, financeiros]      0
+6   [crime, de, branqueamento, de, capitais]      8
+7                      [tráfico, de, drogas]      1
+8          [autonomia, dos, bens, jurídicos]      0
+9                 [concurso, de, infracções]      8
+10                       [crime, organizado]      1
+11                               [corrupção]      2
+12                         [bens, jurídicos]     22

@@ -1,0 +1,48 @@
+                             Expression  Count
+0                       [brandon, koch]      3
+1                        [robert, nash]      3
+2                    [kevin, p., bruen]      5
+3                             [stevens]      4
+4                              [breyer]     66
+5                           [kavanaugh]     12
+6                         [henry, viii]      4
+7                            [james, i]      2
+8                   [sir, john, knight]     14
+9                [chief, justice, holt]      3
+10         [serjeant, william, hawkins]      2
+11              [chief, justice, taney]      2
+12                      [barack, obama]      1
+13  [new, york, 's, solicitor, general]      0
+14                    [justice, breyer]      6
+15                 [justice, kavanaugh]      3
+16                     [justice, alito]      4
+17                            [barrett]      9
+18                          [sotomayor]      2
+19                              [kagan]      2
+20                            [kaufman]      3
+21                          [goldstick]      3
+22                          [j., bates]      1
+23                              [zeoli]      1
+24                           [malinski]      1
+25                            [turchan]      1
+26                           [campbell]      1
+27                            [swedler]      1
+28                            [simmons]      1
+29                           [dominici]      1
+30                           [hemenway]      2
+31                             [azrael]      1
+32                             [connor]      4
+33                             [miller]      4
+34                               [kena]      1
+35                             [truman]      1
+36                             [siegel]      4
+37                         [blackstone]     13
+38                   [justice, stevens]      2
+39                        [m., waldman]      1
+40                        [s., cornell]      5
+41                      [p., finkelman]      1
+42                         [d., walker]      1
+43                         [w., merkel]      1
+44                         [a., scalia]      1
+45                         [b., garner]      1
+46                               [coke]      2

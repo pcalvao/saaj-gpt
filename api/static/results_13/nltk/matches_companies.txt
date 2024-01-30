@@ -1,0 +1,14 @@
+                                                                Expression  Count
+0                                         [supremo, tribunal, de, justiça]      9
+1                                    [convenção, do, conselho, da, europa]      3
+2                                                                    [onu]      1
+3                                                     [ediciones, depalma]      1
+4                                                [aeqitas/ed, ., notícias]      1
+5                                                               [almedina]      1
+6                                                                   [rpcc]      4
+7                               [presidência, do, conselho, de, ministros]      1
+8                                                [ministério, da, justiça]      1
+9   [gabinete, de, planeamento, e, de, coordenação, do, combate, à, droga]      2
+10                                             [assembleia, da, república]      2
+11                                                   [parlamento, europeu]      1
+12                                         [conselho, da, união, europeia]      0

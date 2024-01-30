@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SⱯⱯJ-GPT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../static/css/index-style.css" />
+    <link rel="stylesheet" href="../static/css/virtual-select.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.tiny.cloud/1/7sbfwdks26qdh08af1v1usziglhif3kscnhrc5v28rlclx6l/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="page-header">
+          <form method="POST" action="{{ url_for('home') }}" style="flex: auto; display: flex; flex-direction: column">
+              <button id="home-button" class="btn-home" type="submit" title="Início">
+                <i class="fa-solid fa-house home"></i>
+              </button>
+          </form>
+          <h2 style="margin-right: 5px; font-size: 125%">
+            Sistema de Análise de Documentos Jurídicos
+          </h2>
+        </div>
+        <div class="data-div">
+          <div
+            id="keyworddiv"
+            style="flex-direction: row; margin-top: 5px"
+          >
+          </div>
+          <p style="margin-left: 7px;"><b>Selecione até 3 palavras:</b></p>
+          <select
+            id="multipleSelect"
+            multiple
+            name="keyword-select"
+            placeholder="Selecione as palavras-chave"
+            data-search="true"
+            data-silent-initial-value-set="true"
+          ></select>
+          <form method="POST" action="{{ url_for('index', name=main) }}">
+            <fieldset style="margin: 5px">
+              <legend><b>Selecione uma categoria:</b></legend>
+              <div>
+                <label class="radio-inline">
+                  <input
+                    type="radio"
+                    id="people"
+                    name="optradio"
+                    value="people"
+                  />
+                  Indivíduos
+                </label>
+                <label class="radio-inline" style="margin-left: 65.2px">
+                  <input
+                    type="radio"
+                    id="companies"
+                    name="optradio"
+                    value="companies"
+                  />
+                  Organizações
+                </label>
+                <label class="radio-inline" style="margin-left: 35px">
+                  <input
+                    type="radio"
+                    id="summary"
+                    name="optradio"
+                    value="summary"
+                  />
+                  Resumo
+                </label>
+              </div>
+              <div>
+                <label class="radio-inline">
+                  <input
+                    type="radio"
+                    id="specifics"
+                    name="optradio"
+                    value="specifics"
+                  />
+                  Tópicos Específicos
+                </label>
+                <label class="radio-inline" style="margin-left: 5px">
+                  <input
+                    type="radio"
+                    id="general"
+                    name="optradio"
+                    value="general"
+                  />
+                  Tópicos Gerais
+                </label>
+              </div>
+            </fieldset>
+            <input class="submit" type="submit" value="Submeter"/>
+          </form>
+        </div>
+        <!--<form method="POST" action="{{ url_for('index', name=main) }}" style="flex: auto; display: flex; flex-direction: column">-->
+          <div class="title-header notepad-header">
+            <h3 style="flex: auto; margin: 0; margin-left: 5px; font-size: 100%">
+              Bloco de Notas
+            </h3>
+            <button class="btn-download" type="submit" title="Download notes" onclick="downloadNotes()">
+              <i class="fa-solid fa-file-arrow-down download"></i>
+            </button>
+          </div>
+          <div class="notepad">
+            <textarea
+              id="notepad"
+              name="notepad"
+              placeholder="Tire algumas notas..."
+            ></textarea>
+          </div>
+        <!--</form>-->
+      </div>
+      <div class="box" style="margin-right: 5px; margin-left: 5px">
+        <div class="title-header" style="margin-top: 5px;">
+          <h3 style="margin: 0; margin-left: 5px; font-size: 100%">
+            Resultados da Categoria
+          </h3>
+        </div>
+        <div id="category-list" class="list">
+          {% if category and category != "summary": %}
+          <table class="styled-table">
+            <tr>
+              {% if category == "people": %}
+              <th align="left" style="padding-left: 15px">Nome</th>
+              {% endif %}
+              {% if category == "companies": %}
+              <th align="left" style="padding-left: 15px">Organização</th>
+              {% endif %}
+              {% if category == "specifics" or category == "general" %}
+              <th align="left" style="padding-left: 15px">Expressão/Termo</th>
+              {% endif %}
+              <th align="center">#</th>
+              <th align="right"></th>
+            </tr>
+            {% for res in results: %}
+            <tr>
+              <td class="list-item-word">{{ res[0] }}</td>
+              {% if res[1] != "None": %}
+              <td class="list-item-count">{{ res[1] }}</td>
+              {% endif %}
+              <td>
+              {% if res[1] > 0: %}
+              <form method="POST" action="{{ url_for('index', name=main) }}">
+                <button class="btn-update-doc" type="submit" name="updatedoc" value="{{ res[0] }}">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+              {% endif %}
+              </td>
+              <td>
+                {% if res[1] > 0: %}
+                <form method="POST" action="{{ url_for('index', name=main) }}">
+                  <button id="get-context" class="btn-update-doc" type="submit" name="getcontexts" value="{{ res[0] }}">
+                    <i class="fa-solid fa-file-lines"></i>
+                  </button>
+                </form>
+                {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+          </table>
+          {% else %}
+            {% if category == "summary": %}
+              {% for res in results: %}
+              <p class="summary"> {{ res[0] }} </p>
+              {% endfor %}
+            {% endif %}
+          {% endif %}
+        </div>
+        <div class="title-header">
+          {% if sum_exp %}
+          <h3 style="margin: 0; margin-left: 5px; font-size: 100%; color: #3793f6">
+            {{ sum_exp }}
+          </h3>
+          {% else %}
+          <h3 style="margin: 0; margin-left: 5px; font-size: 100%">
+            Resumo
+          </h3>
+          {% endif %}
+          <div id="loader" class="fa-1x loader-div">
+            <i class="fa-solid fa-circle-notch fa-spin loader"></i>
+          </div>
+        </div>
+        {% if sum %}
+        <div id="summarys" class="dict" style="margin-bottom: 0px; border-bottom: 0px solid black; border-bottom-left-radius: 0px; border-bottom-left-radius: 0px;">
+          <p id="ctxsummary" class="summary">{{ sum }}</p>
+        </div>
+        <div class="summary-div">
+          <form method="POST" action="{{ url_for('index', name=main) }}">
+            <input id="closesummary" name="closesummary" type="submit" class="summary-btn" value="Voltar"/>
+          </form>
+          <input id="keep" type="submit" class="summary-btn" value="Guardar"/>
+        </div>
+        {% else %}
+        <div id="summarys" class="dict" style="margin-bottom: 5px;">
+          <ul class="ul-dict">
+          {% for i in range(ctxts| length): %}
+            <form method="POST" action="{{ url_for('index', name=main) }}">
+              <button id="get-summarys" class="btn-get-summary" name="getsummarys" value="{{ i }}">
+                <li>
+                  <div class="sum-div">
+                    <p class="dict-item">{{ ctxts[i] }}</p>
+                  </div>
+                </li>
+              </button>
+            </form>
+          {% endfor %}
+          <ul>
+          </div>
+        {% endif %}
+        <div class="title-header" style="margin-top: 5px">
+          <h3 style="margin: 0; margin-left: 5px; font-size: 100%">
+            Dicionário Jurídico
+          </h3>
+        </div>
+        <div id="legal-dictionary" class="dict" style="margin-bottom: 5px;">
+        </div>
+      </div>
+      <div class="box">
+        <div class="div-update-doc">
+          {% if exp == "" : %}
+          <h5 class="h-exp">Documento em análise:
+            {% if "13" in main %}
+            <h5 style="color: #3793f6; font-size: 13px; align-self: center;">Acórdão Nº13/2007</h5>
+            {% endif %}
+            {% if "636" in main %}
+            <h5 style="color: #3793f6; font-size: 13px; align-self: center;">Acórdão Nº636/2018</h5>
+            {% endif %}
+            {% if "bruen" in main %}
+            <h5 style="color: #3793f6; font-size: 13px; align-self: center;">NY State Rifle & Pistol Association v. Bruen</h5>
+            {% endif %}
+          </h5>
+          {% else: %}
+          <h4 class="h-exp">Resultados para: <h4 style="color: #3793f6; margin-left: 3px">{{ exp }}</h4></h4>
+          <form method="POST" action="{{ url_for('index', name=main) }}" style="flex: auto; display: flex; flex-direction: column; ">
+            <button class="btn-reset-doc" type="submit" name="resetdoc">Original</button>
+          </form>
+          {% endif %}
+        </div>
+        <embed 
+          class="document"
+          id="document"
+          src="{{ doc }}"
+          frameborder="0"
+          type="application/pdf"
+        ></embed >
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="../static/js/virtual-select.min.js"></script>
+    <script type="text/javascript">
+      VirtualSelect.init({
+        ele: "#multipleSelect",
+        optionsCount: 3,
+        searchPlaceholderText: "Pesquise...",
+        optionsSelectedText: "opções selecionadas",
+        optionSelectedText: "opção selecionada",
+        disableAllOptionsSelectedText: true,
+        maxValues: 3,
+        silentInitialValueSet: true,
+      });
+    </script>
+    <script src="../static/js/script.js"></script>
+    <script>
+      if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+      }
+    </script>
+  </body>
+  <!--<footer>
+    &copy; 2023 Sistema de Análise de Acórdãos Judiciais
+  </footer>-->
+  
+</html>

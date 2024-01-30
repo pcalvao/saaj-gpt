@@ -1,0 +1,28 @@
+                                                                        Expression  Count
+0                                                        [recurso, extraordinário]      1
+1                                                                 [jurisprudência]     12
+2                                                   [tráfico, de, estupefacientes]     34
+3                                                    [branqueamento, de, capitais]     44
+4                                                           [concurso, de, normas]      1
+5                                                       [delimitação, da, autoria]      1
+6   [crimes, de, tráfico, de, estupefacientes, e, de, branqueamento, de, capitais]      2
+7                                       [punição, do, branqueamento, de, capitais]      2
+8                             [jurisprudência, do, supremo, tribunal, de, justiça]      2
+9                                                [crimes, de, tráfico, de, drogas]      0
+10                                        [crime, de, branqueamento, de, capitais]      8
+11                                                      [bem, jurídico, protegido]      4
+12                                                    [legislação, sobre, o, tema]      0
+13                           [autoria, do, crime, de, branqueamento, de, capitais]      0
+14          [relação, entre, o, crime, de, branqueamento, e, o, crime, subjacente]      0
+15                                       [concurso, real, entre, os, dois, crimes]      0
+16                                 [bem, jurídico, protegido, pelo, branqueamento]      0
+17               [círculo, de, pessoas, que, podem, ser, autores, do, tipo, legal]      1
+18                                                            [autoria, do, crime]      1
+19                                                      [concurso, de, infracções]      8
+20                                                       [bem, jurídico, tutelado]      9
+21                                                      [organizações, criminosas]      5
+22                                              [sistema, financeiro, e, político]      0
+23                                                [concurso, real, de, infracções]      3
+24                                                              [fases, do, crime]      0
+25                                                            [definições, legais]      0
+26                                                    [convenções, internacionais]      0
